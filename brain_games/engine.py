@@ -5,9 +5,7 @@ ROUNDS_COUNT = 3
 def run_game(description, generate_round):
     """
     Motor genérico que orquesta la bienvenida, las rondas y la validación.
-    
-    :param description: Reglas del juego (string).
-    :param generate_round: Función que devuelve la pregunta y la respuesta correcta.
+    generate_round: Función que devuelve la pregunta y la respuesta correcta.
     """
     print('Welcome to the Brain Games!')
     print(description)

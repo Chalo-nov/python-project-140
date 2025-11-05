@@ -1,13 +1,15 @@
 import random 
-import prompt
+
 DESCRIPTION = 'Encuentra el máximo común divisor de los números dados.'
+
 
 def get_gcd(a,b):
     while b:
         a, b = b, a % b
     return a
 
-def generate_round():
+
+def generate_round(): 
     # 1. Generar dos números aleatorios
     num1 = random.randint(1, 100)
     num2 = random.randint(1, 100)

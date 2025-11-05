@@ -1,8 +1,9 @@
 import random
 
-DESCRIPTION = 'Responde "yes" si el número es par, de lo contrario responde "no".'
+DESCRIPTION = 'Responde "yes" si es par, de lo contrario responde "no".'
 MIN_NUMBER = 1
 MAX_NUMBER = 100
+
 
 def generate_round():
     number = random.randint(MIN_NUMBER, MAX_NUMBER)

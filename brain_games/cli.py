@@ -1,9 +1,9 @@
-from brain_games.cli import welcome_user # <--- ¡Importación Absoluta!
+import prompt
+
 
 def welcome_user():
-
-    print('¡Bienvenido(a) a los Juegos Mentales!')
+   print('¡Bienvenido(a) a los Juegos Mentales!')
+   
+   name = prompt.string('¿Cuál es tu nombre? ')
     
-    name = prompt.string('¿Cuál es tu nombre? ')
-    
-    print(f'Hola, {name}!')
+   print(f'Hola, {name}!')

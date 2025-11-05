@@ -1,8 +1,9 @@
 import random
 
-DESCRIPTION = 'Responde "yes" si el número es primo, de lo contrario responde "no".'
+DESCRIPTION = 'Responde "yes" si es primo, de lo contrario responde "no".'
 MIN_NUMBER = 1
 MAX_NUMBER = 100
+
 
 def is_prime(number):
     if number < 2:
@@ -14,6 +15,7 @@ def is_prime(number):
             return False
         i += 1
     return True
+
 
 def generate_round():
     # 1. Generar un número aleatorio
