@@ -1,6 +1,6 @@
 import random
 
-DESCRIPTION = 'Responde "yes" si es primo, de lo contrario responde "no".'
+DESCRIPTION = 'Responde "yes" si es primo, de lo contrario responde "no"'
 MIN_NUMBER = 1
 MAX_NUMBER = 100
 
