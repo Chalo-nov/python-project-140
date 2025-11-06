@@ -1,3 +1,4 @@
+import prompt
 from brain_games.engine import run_game
 from brain_games.games import calc
 
