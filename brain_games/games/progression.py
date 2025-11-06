@@ -1,6 +1,6 @@
 import random
 
-DESCRIPTION = '¿Qué número falta en la progresión?'
+DESCRIPTION = 'What number is missing in the progression?'
 MIN_START = 1
 MAX_START = 20
 MIN_STEP = 1

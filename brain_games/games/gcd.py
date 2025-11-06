@@ -1,6 +1,6 @@
 import random 
 
-DESCRIPTION = 'Encuentra el máximo común divisor de los números dados'
+DESCRIPTION = 'Find the greatest common divisor of given numbers'
 
 
 def get_gcd(a,b):

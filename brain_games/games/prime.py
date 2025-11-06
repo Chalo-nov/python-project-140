@@ -1,6 +1,6 @@
 import random
 
-DESCRIPTION = 'Responde "yes" si es primo, de lo contrario responde "no"'
+DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no"'
 MIN_NUMBER = 1
 MAX_NUMBER = 100
 

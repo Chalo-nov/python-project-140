@@ -3,13 +3,9 @@ import prompt
 ROUNDS_COUNT = 3
 
 
-def run_game(description, generate_round):
-    print(description)
+def run_game(user_name, description, generate_round): # <-- ¡ESPERA 3 ARGUMENTOS!
+    print(description) # Solo imprime la descripción
     
-    user_name = prompt.string('May I have your name? ')
-    print(f'Hello, {user_name}!')
-    print()
-
     for _ in range(ROUNDS_COUNT):
         question, correct_answer = generate_round()
         
