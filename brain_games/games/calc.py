@@ -1,6 +1,6 @@
 import random
 
-DESCRIPTION = "Calcula el valor de la operacion"
+DESCRIPTION = "What is the result of the expression?
 
 
 def calculate(num1, num2, operator):
