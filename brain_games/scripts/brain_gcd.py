@@ -1,4 +1,3 @@
-import prompt
 from brain_games.engine import run_game
 from brain_games.games import gcd
 
@@ -9,7 +8,7 @@ def main():
     print(f'Hello, {user_name}!')
     print() # Para espaciado
     
-    run_game(user_name, gcd.DESCRIPTION, gcd.generate_round) 
+    run_game(gcd.DESCRIPTION, gcd.generate_round) 
 
   
 if __name__ == "__main__":

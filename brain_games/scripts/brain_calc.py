@@ -1,4 +1,3 @@
-import prompt
 from brain_games.engine import run_game
 from brain_games.games import calc
 
@@ -9,8 +8,7 @@ def main():
     print(f'Hello, {user_name}!')
     print() # Para espaciado
     
-    # 2. Llamada al motor con TRES argumentos
-    run_game(user_name, calc.DESCRIPTION, calc.generate_round) 
+    run_game(calc.DESCRIPTION, calc.generate_round) 
     
 if __name__ == "__main__":
     main()

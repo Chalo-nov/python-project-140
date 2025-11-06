@@ -3,9 +3,14 @@ import prompt
 ROUNDS_COUNT = 3
 
 
-def run_game(user_name, description, generate_round):
+def run_game(description, generate_round):
     print(description)
     
+
+    user_name = prompt.string('May I have your name? ')
+    print(f'Hello, {user_name}!')
+    print() # Línea de espaciado
+
     for _ in range(ROUNDS_COUNT):
         question, correct_answer = generate_round()
         

@@ -1,8 +1,6 @@
-# brain_games/scripts/brain_even.py
-
 from brain_games.engine import run_game
 from brain_games.games import even
-import prompt
+
 
 def main():
     print('Welcome to the Brain Games!')
@@ -10,7 +8,7 @@ def main():
     print(f'Hello, {user_name}!')
     print() 
 
-    run_game(user_name, even.DESCRIPTION, even.generate_round) 
+    run_game(even.DESCRIPTION, even.generate_round) 
     
 
 if __name__ == "__main__":
