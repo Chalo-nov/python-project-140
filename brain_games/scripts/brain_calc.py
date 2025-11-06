@@ -1,13 +1,16 @@
-# Importa la logica del juego
+import prompt
+from brain_games.engine import run_game
 from brain_games.games import calc
-# Importa la función que ejecuta el juego (el motor)
-from brain_games.engine import run_game 
-
 
 def main():
-    """Punto de entrada: Llama al motor de juego con la lógica de 'calc'."""
-    run_game(calc.DESCRIPTION, calc.generate_round)
-
-
+    # 1. Diálogo de bienvenida y obtención del nombre
+    print('Welcome to the Brain Games!')
+    user_name = prompt.string('May I have your name? ')
+    print(f'Hello, {user_name}!')
+    print() # Para espaciado
+    
+    # 2. Llamada al motor con TRES argumentos
+    run_game(user_name, calc.DESCRIPTION, calc.generate_round) 
+    
 if __name__ == "__main__":
     main()
