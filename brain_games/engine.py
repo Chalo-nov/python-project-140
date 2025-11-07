@@ -15,9 +15,12 @@ def run_game(user_name, description, generate_round):
         if user_answer.lower() == correct_answer:
             print('Correct!')
         else:
-            
+
             print(f"'{user_answer}' is wrong answer ;(. "
                   f"Correct answer was '{correct_answer}'.")
+            
+            print(f"Let's try again, {user_name}!")
+            
             return 
 
     print(f'Congratulations, {user_name}!')
