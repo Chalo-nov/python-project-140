@@ -3,7 +3,7 @@ import random
 DESCRIPTION = "Find the greatest common divisor of given numbers."
 
 
-def get_gcd(a,b):
+def get_gcd(a, b):
     while b:
         a, b = b, a % b
     return a

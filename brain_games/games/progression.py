@@ -8,6 +8,7 @@ MAX_STEP = 10
 MIN_LENGTH = 5
 MAX_LENGTH = 10
 
+
 def generate_progression(start, step, length):
     progression = []
     current = start
@@ -15,6 +16,7 @@ def generate_progression(start, step, length):
         progression.append(str(current))
         current += step
     return progression
+
 
 def generate_round():
     # 1. Generar parámetros aleatorios

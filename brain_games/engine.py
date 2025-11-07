@@ -3,9 +3,9 @@ import prompt
 ROUNDS_COUNT = 3
 
 
-def run_game(user_name, description, generate_round): # <-- ¡ESPERA 3 ARGUMENTOS!
-    print(description) # Solo imprime la descripción
-    
+def run_game(user_name, description, generate_round):
+    print(description)
+
     for _ in range(ROUNDS_COUNT):
         question, correct_answer = generate_round()
         
@@ -15,8 +15,9 @@ def run_game(user_name, description, generate_round): # <-- ¡ESPERA 3 ARGUMENTO
         if user_answer.lower() == correct_answer:
             print('Correct!')
         else:
-            print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
-            print(f"Let's try again, {user_name}!")
+            
+            print(f"'{user_answer}' is wrong answer ;(. "
+                  f"Correct answer was '{correct_answer}'.")
             return 
 
     print(f'Congratulations, {user_name}!')
